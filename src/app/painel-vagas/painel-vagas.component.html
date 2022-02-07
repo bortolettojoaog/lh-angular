@@ -1,0 +1,58 @@
+<div class="container">
+    <app-painel-vagas-criacao></app-painel-vagas-criacao>
+
+    <h1>Editar/Excluir Vaga</h1>
+
+    <div class="cards">
+
+        <div class="child" *ngFor="let vaga of vagas">
+
+            <div class="card-single">
+                <div class="card-single-wraper">
+                    <img src="../../assets/images/vagas/{{vaga.imagem}}" alt="Imagem programador {{vaga.id}}" />
+        
+                    <div class="wraper-info">
+                        <form method="post">
+                            <div class="form-group">
+                                <label>Número da Vaga:</label>
+                                <input type="text" id="idv" name="id" [(ngModel)] = "vaga.id" value="{{vaga.id}}" placeholder="Número da vaga. Ex.: 1000" readonly />
+                            </div><!--form-group-->
+    
+                            <div class="form-group">
+                                <label>Nome da Vaga:</label>
+                                <input type="text" name="nome" [(ngModel)] = "vaga.nome" value="{{vaga.nome}}" placeholder="Nome da vaga. Ex.: Desenvolvedor Full-Stack" />
+                            </div><!--form-group-->
+    
+                            <div class="form-group">
+                                <label>Descrição Vaga:</label>
+                                <input type="text" name="descricao" [(ngModel)] = "vaga.descricao" value="{{vaga.descricao}}" placeholder="Descricao da vaga. Ex.: Analista e Desenvolvedor" />
+                            </div><!--form-group-->
+    
+                            <div class="form-group">
+                                <label>Benefícios da Vaga:</label>
+                                <input type="text" name="beneficios" [(ngModel)] = "vaga.beneficios" value="{{vaga.beneficios}}" placeholder="Benefícios da vaga. Ex.: Duas férias no ano" />
+                            </div><!--form-group-->
+    
+                            <div class="form-group">
+                                <label>Salário da Vaga:</label>
+                                <input type="text" id="salario" name="salario" [(ngModel)] = "vaga.salario" value="{{vaga.salario}}" placeholder="Salário da vaga. Ex.: 10000" />
+                            </div><!--form-group-->
+    
+                            <div class="form-group">
+                                <label>Imagem da Vaga:</label>
+                                <input type="text" name="imagem" [(ngModel)] = "vaga.imagem" value="{{vaga.imagem}}" placeholder="Imagem da vaga. Ex.: 1001-image..jpg" />
+                                <input type="hidden" value="atualizacao&exclusao" />
+                            </div><!--form-group-->
+
+                            <button style="background-color: rgb(255, 88, 88);" (click)="atualizar(vaga.id, vaga.nome, vaga.descricao, vaga.beneficios, vaga.salario, vaga.imagem)">Atualizar</button>
+                            <button style="background-color: rgb(255, 216, 88);" (click)="excluir(vaga.id)">Excluir</button>
+                        </form>
+                    </div><!--wraper-info-->
+    
+                </div><!--card-single-wraper-->
+    
+            </div><!--card-single-->
+    
+        </div><!--for-->
+    </div><!--cards-->
+</div><!--container-->

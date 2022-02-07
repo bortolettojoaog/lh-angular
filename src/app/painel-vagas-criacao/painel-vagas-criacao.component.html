@@ -1,0 +1,38 @@
+<h1>Cadastrar Vaga</h1>
+
+<form method="post">
+    <div class="form-group">
+        <label>Número da Vaga:</label>
+        <input type="text" name="id" [(ngModel)] = "vaga.id" placeholder="Número da vaga. Ex.: 1000" value="" />
+    </div><!--form-group-->
+
+    <div class="form-group">
+        <label>Nome da Vaga:</label>
+        <input type="text" name="nome" [(ngModel)] = "vaga.nome" placeholder="Nome da vaga. Ex.: Desenvolvedor Full-Stack" />
+    </div><!--form-group-->
+
+    <div class="form-group">
+        <label>Descrição Vaga:</label>
+        <input type="text" name="descricao" [(ngModel)] = "vaga.descricao" placeholder="Descricao da vaga. Ex.: Analista e Desenvolvedor" />
+    </div><!--form-group-->
+
+    <div class="form-group">
+        <label>Benefícios da Vaga:</label>
+        <input type="text" name="beneficios" [(ngModel)] = "vaga.beneficios" placeholder="Benefícios da vaga. Ex.: Duas férias no ano" />
+    </div><!--form-group-->
+
+    <div class="form-group">
+        <label>Salário da Vaga:</label>
+        <input type="text" name="salario" [(ngModel)] = "vaga.salario" placeholder="Salário da vaga. Ex.: 10000" value="" />
+    </div><!--form-group-->
+
+    <div class="form-group">
+        <label>Imagem da Vaga:</label>
+        <input type="text" name="imagem" [(ngModel)] = "vaga.imagem" placeholder="Imagem da vaga. Ex.: 1001-image..jpg" />
+        <input type="hidden" value="criacao" />
+    </div><!--form-group-->
+
+    <div class="form-group">
+        <button style="margin: 20px auto 0 auto; display: block;" type="button" (click)="cadastrar()">Cadastrar Vaga</button>
+    </div><!--form-group-->
+</form>

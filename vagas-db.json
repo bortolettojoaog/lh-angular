@@ -1,0 +1,36 @@
+{
+  "vagas": [
+    {
+      "id": 1001,
+      "nome": "Desenvolvedor Full-Stack Júnior",
+      "imagem": "1001-image.jpg",
+      "descricao": "Trabalhar Remotamente",
+      "salario": 5000,
+      "beneficios": "Uma férias no ano"
+    },
+    {
+      "id": 1002,
+      "nome": "Desenvolvedor Full-Stack Senior",
+      "imagem": "1002-image.jpg",
+      "descricao": "Trabalhar Remotamente",
+      "salario": 10000,
+      "beneficios": "Duas férias no ano"
+    },
+    {
+      "id": 1003,
+      "nome": "Desenvolvedor Full-Stack Pleno",
+      "imagem": "1003-image.jpg",
+      "descricao": "Trabalhar Remotamente",
+      "salario": 15000,
+      "beneficios": "Três férias no ano"
+    },
+    {
+      "id": "1004",
+      "nome": "Desenvolvedor",
+      "imagem": "1004-image.jpg",
+      "descricao": "Blockchain",
+      "salario": "12312321",
+      "beneficios": "Férias em países distintos"
+    }
+  ]
+}

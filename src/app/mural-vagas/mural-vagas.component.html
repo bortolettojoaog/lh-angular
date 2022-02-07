@@ -1,0 +1,27 @@
+<div class="container">
+    
+    <div class="cards">
+        <div class="child" *ngFor="let vaga of vagas">
+
+            <div class="card-single">
+                <div class="card-single-wraper">
+                    <img src="../../assets/images/vagas/{{vaga.imagem}}" alt="Imagem programador {{vaga.id}}" />
+        
+                    <div class="wraper-info">
+                        <h1>Vaga #{{vaga.id}}</h1>
+                        <h2>{{vaga.nome}}</h2>
+                        <h2 style="font-size: 18px; font-weight: 300;">{{vaga.descricao}}</h2>
+                        <h3>Informações:</h3>
+                        <h4>{{vaga.beneficios}}</h4>
+                        <h4 style="margin-bottom: 24px;">Salário: R${{vaga.salario}}</h4>
+                    </div><!--wraper-info-->
+
+                    <a href="#">Saber Mais</a>
+    
+                </div><!--card-single-wraper-->
+    
+            </div><!--card-single-->
+    
+        </div><!--for-->
+    </div><!--cards-->
+</div><!--container-->
