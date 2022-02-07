@@ -79,3 +79,37 @@
     display: inline-block;
     text-align: center;
 }
+
+@media screen and (max-width: 500px) {
+    .child {
+        width: 90%;
+    }
+
+    .card-single {
+        padding: 30px 8px;
+    }
+}
+
+@media screen and (max-width: 580px) {
+    .child {
+        width: 80%;
+    }
+
+    .card-single {
+        max-width: 400px;
+        float: none;
+        display: block;
+        margin: 8px auto;
+        padding: 30px 5%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .child {
+        width: 50%;
+    }
+
+    .card-single  {
+        padding: 30px 20px;
+    }
+}

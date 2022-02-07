@@ -36,3 +36,14 @@
     text-decoration: none;
     font-size: 18px;
 }
+
+@media screen and (max-width: 768px) {
+    .menu {
+        padding: 20px;
+    }
+
+    .menu-logo a {
+        font-size: 21px;
+        letter-spacing: 5px;
+    }
+}
