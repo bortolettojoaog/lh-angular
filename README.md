@@ -35,7 +35,7 @@
 
 ### Prerequisites:
 
-You need to have the following tools installed on your machine: [Git](https://git-scm.com), [Node](https://nodejs.org/en/) and [VSCode](https://code.visualstudio.com/)
+You need to have the following tools installed on your machine: [Git](https://git-scm.com), [Node](https://nodejs.org/en/), [Angular](https://angular.io/) and [VSCode](https://code.visualstudio.com/)
 
 <br/>
 
@@ -86,6 +86,7 @@ $ <http://localhost:3000/vagas>
 
 The following tools were used in building the project:
 
+- [Angular](https://angular.io/)
 - [JavaScript](https://www.javascript.com/)
 - [HTML](https://pt.wikipedia.org/wiki/HTML)
 - [CSS](https://pt.wikipedia.org/wiki/Cascading_Style_Sheets)
